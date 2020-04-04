@@ -1,0 +1,24 @@
+{
+  "name": "music-bridge",
+  "version": "1.0.0",
+  "description": "A Telegram Bot that translates links from music streaming services to each other.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soroushkarimi/music-bridge.git"
+  },
+  "keywords": [
+    "music",
+    "bot",
+    "telegram"
+  ],
+  "author": "Soroush Karimi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soroushkarimi/music-bridge/issues"
+  },
+  "homepage": "https://github.com/soroushkarimi/music-bridge#readme"
+}
