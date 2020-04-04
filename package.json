@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/soroushkarimi/music-bridge/issues"
   },
-  "homepage": "https://github.com/soroushkarimi/music-bridge#readme"
+  "homepage": "https://github.com/soroushkarimi/music-bridge#readme",
+  "dependencies": {
+    "telegraf": "^3.37.0"
+  }
 }
