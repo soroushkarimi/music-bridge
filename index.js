@@ -1,10 +1,12 @@
 require('dotenv').config()
 const Telegraf = require('telegraf')
+const axios = require('axios')
 
 const SERVICES = [
     {
         name: 'SPOTIFY',
-        format: 'https://open.spotify.com/'
+        format: 'https://open.spotify.com/',
+        api_url: 'https://api.spotify.com/v1'
     },
     {
         name: 'APPLE_MUSIC',
@@ -20,6 +22,25 @@ const recognize_link = (link) => {
         }
     })
     return type
+}
+
+
+const search = (link) => {
+    // Spotify
+    
+
+}
+const translate_link = (link, type) => {
+    switch (type) {
+        case SERVICES[0].name:
+            const result = search(link, type)
+            break;
+        // case SERVICES[1].name:
+
+        //     break;
+        default:
+            break;
+    }
 }
 
 const bot = new Telegraf(process.env.BOT_KEY)
