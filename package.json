@@ -4,8 +4,7 @@
   "description": "A Telegram Bot that translates links from music streaming services to each other.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": "12.x"
