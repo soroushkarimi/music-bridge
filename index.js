@@ -85,13 +85,15 @@ bot.help((ctx) =>
   )
 );
 bot.use(async (ctx) => {
-  const message_text = ctx.message.text;
-  const link_type = recognize_link(message_text);
-  if (link_type === undefined) {
-    ctx.reply("Link is not valid. Please try a correct link.");
-  } else {
-    const res = await search(ctx.message.text);
-    ctx.reply(res);
+  if (ctx.message !== undefined && ctx.message.text !== undefined) {
+    const message_text = ctx.message.text;
+    const link_type = recognize_link(message_text);
+    if (link_type === undefined) {
+      ctx.reply("Link is not valid. Please try a correct link.");
+    } else {
+      const res = await search(ctx.message.text);
+      ctx.reply(res);
+    }
   }
 });
 bot.launch();
