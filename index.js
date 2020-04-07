@@ -79,7 +79,7 @@ const search = async (link) => {
 
 const bot = new Telegraf(process.env.BOT_KEY);
 bot.start((ctx)=> {
-  ctx.reply("Wecomt to Music Bridge Bot. Send me a spotify link to translate it to apple music for you.")
+  ctx.reply("Welcome to Music Bridge Bot. Send me a spotify track to translate it to apple music track for you.")
 })
 bot.use(async (ctx) => {
   if (ctx.message !== undefined && ctx.message.text !== undefined) {
