@@ -6,7 +6,7 @@ const axios = require("axios");
 const SERVICES = [
   {
     name: "SPOTIFY",
-    format: "https://open.spotify.com/",
+    format: "https://open.spotify.com/track/",
     api_url: "https://api.spotify.com/v1/",
   },
 ];
@@ -23,7 +23,7 @@ const recognize_link = (link) => {
 
 const search = async (link) => {
   let track;
-  const id = link.replace(SERVICES[0].format + "track/", "").slice(0, 22);
+  const id = link.replace(SERVICES[0].format, "").slice(0, 22);
   try {
     const req_auth = await axios.post(
       "https://accounts.spotify.com/api/token",
