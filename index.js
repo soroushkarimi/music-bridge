@@ -14,7 +14,7 @@ const SERVICES = [
 const recognize_link = (link) => {
   let type;
   SERVICES.map((item) => {
-    if (link.includes(item.format)) {
+    if (link !== undefinedlink && link.includes(item.format)) {
       type = item.name;
     }
   });
